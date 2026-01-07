@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <style>
+           h1{
+            margin: 5px;
+            margin-top: 30px;
+            margin-left: 40px;
+            border:solid red 30px;
+           
+            position:static;
+        }
+            h2{
+            margin-top: 30px;
+            margin-left: 70px;
+            border:solid blue 30px;
+            
+            position:relative;
+            left:30px;
+            top:60px;
+            }
+            h3{
+            margin-top: 30px;
+            margin-left: 40px;
+            border:solid violet 30px;
+        
+            position:absolute;
+            right:80px;
+            top:400px;
+            }
+            h4{
+            margin-top: 30px;
+            margin-left: 40px;
+            border:solid red 30px;
+            
+            position:fixed;
+            top:400px;
+            }
+            h5{
+            margin-top: 30px;
+            margin-left: 40px;
+            border:solid red 30px;
+            
+            position:sticky;
+            top:180px;
+            }
+            p{font-size: 30px;}
+        </style>
+        
+
+    </head>
+    <body>
+        <h1>one</h1>
+        <h2>two</h2>
+        <h3>
+            three
+        </h3>
+        <h4>four</h4>
+        <h5>five</h5>
+        <p>position: sticky in CSS is a powerful layout feature that allows an element to behave as a combination of position: relative and position: fixed, meaning the element scrolls normally with the page until it reaches a specified offset (such as top: 0), after which it “sticks” to that position while the rest of the content continues to scroll. This sticky behavior is constrained within the boundaries of its nearest scrolling parent, so once the parent container ends, the sticky element stops sticking and scrolls away, unlike position: fixed, which remains attached to the viewport at all times. For position: sticky to work correctly, at least one directional offset (top, bottom, left, or right) must be defined, and the parent container must not have overflow: hidden, overflow: auto, or overflow: scroll, as these properties can prevent the sticky positioning from activating. Sticky positioning is especially useful for user interface components such as navigation bars, table headers, section titles, and sidebars, where maintaining visibility during scrolling improves usability without removing the element from the normal document flow. Additionally, developers often use z-index with sticky elements to ensure they remain visible above other content when overlapping occurs. Overall, position: sticky provides a clean, CSS-only solution for creating context-aware fixed elements that enhance layout behavior while preserving responsiveness and structural integrity.</p>
+    </body>
+</html>
