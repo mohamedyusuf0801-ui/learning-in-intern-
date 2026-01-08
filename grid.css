@@ -2,7 +2,12 @@
     background-color: black;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+  grid-gap: 50px 20px;
+  margin:20px 20px;
+  margin-left: 20px;
+  grid-template-areas:50px 20px ;
 }
 
 .item {
