@@ -1,0 +1,13 @@
+.container {
+    background-color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.item {
+  background-color: steelblue;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
