@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            .co{
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+            .one{
+                background-color:blue;
+                margin: 5px;
+                height: 100px;
+                flex-basis: 20%;
+                
+            }
+            @media screen and (max-width:1500px) {
+                .one{ flex-basis:30%;}
+            }
+            @media screen and (max-width:1200px) {
+               .one{ flex-basis:40%;}
+            }
+            @media screen and (max-width:1000px){
+             .one{ flex-basis:90%;}
+            }
+
+
+
+
+        </style>
+    </head>
+    <body>
+       
+    <div class="co">
+        <div class="one"></div>
+         <div class="one"></div>
+        <div class="one"></div>
+         <div class="one"></div>
+    </div>
+    </body>
+
+
+        </html>
