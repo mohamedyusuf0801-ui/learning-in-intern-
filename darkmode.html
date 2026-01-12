@@ -1,30 +1,64 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            :root {
-  --btn-bg: #3498db;
-  --btn-text: #ffffff;
+<head>
+    <title>Simple Dark Mode</title>
+    <style>
+    /* Default Light Mode */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0;
+    padding: 20px;
 }
 
-/* Dark mode */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --btn-bg: #1abc9c;
-    --btn-text: #000000;
-  }
+/* Hide checkbox */
+#dark-toggle {
+    display: none;
 }
 
-.btn {
-  background: var(--btn-bg);
-  color: var(--btn-text);
+/* Toggle label */
+.toggle-label {
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px 15px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 20px;
 }
 
-        </style>
+/* Dark Mode when checkbox is checked */
+#dark-toggle:checked ~ .container {
+    background-color: #121212;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+}
 
-    </head>
-    <body>
-        <h1>DARK MODE</h1>
-        <button type="btn">dark</button>
-    </body>
+/* Optional: dark background for body feel */
+#dark-toggle:checked ~ .container h1,
+#dark-toggle:checked ~ .container p {
+    color: #ffffff;
+}
+
+
+    </style>
+
+</head>
+<body>
+
+    <!-- Toggle Switch -->
+    <input type="checkbox" id="dark-toggle">
+    <label for="dark-toggle" class="toggle-label">🌙 Dark Mode</label>
+
+    <!-- Page Content -->
+    <div class="container">
+        <h1>Dark Mode </h1>
+        <p>This dark mode works without JavaScript.</p>
+    </div>
+
+</body>
+
 </html>
