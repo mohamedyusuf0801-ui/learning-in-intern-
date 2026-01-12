@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            :root {
+  --btn-bg: #3498db;
+  --btn-text: #ffffff;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --btn-bg: #1abc9c;
+    --btn-text: #000000;
+  }
+}
+
+.btn {
+  background: var(--btn-bg);
+  color: var(--btn-text);
+}
+
+        </style>
+
+    </head>
+    <body>
+        <h1>DARK MODE</h1>
+        <button type="btn">dark</button>
+    </body>
+</html>
