@@ -1,6 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <title>Navbar Example</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 15px 30px;
+}
+
+/* Logo */
+.logo {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+/* Links */
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+/* Hover Effect */
+.menu a:hover {
+  color: #00bcd4;
+}
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">MOHAMED</div>
+  <ul class="menu">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+</body>
 </html>
